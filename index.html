@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- favicons link -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,17 +38,17 @@
           <h4>My Portfolio</h4>
 
           <div class="leftsidenav">
-            <a href="Skills">Skills</a>
+            <a href="#skillspage">Skills</a>
             <a href="about">about</a>
-            <a href="projects">projects</a>
-            <a href="resume">Resume</a>
+            <a href="#projectpage">projects</a>
+            <a href="./Docs/Abhinav_Jaiswal_Resume.pdf" download="">Resume</a>
           </div>
         </div>
         <div id="center">
           <div class="left">
             <h3>Hi my name is abhinav jaiswal</h3>
             <br />
-            <h3>and i am developer</h3>
+            <h3>and i am developer, Researcher, Technologist, Open Source Contributor, Designer.</h3>
           </div>
           <div class="right">
             <h1><img src="images/dev.svg" alt="" /></h1>
@@ -54,32 +58,35 @@
       <div id="projectpage">
         <h1>Projects</h1>
         <div class="project-content">
-          <div class="helpy">
-            <a href="#"></a>
-            <div class="project-card">
-              <div class="duration">DEC 2023</div>
-              <div class="company">Help_Moto</div>
-              <div class="imh"></div>
-              <div class="role">QA Intern</div>
-            </div>
+          <div class="helpy" id="card-gradient-helpy">
+            <a href="#">
+              <div class="project-card">
+                <div class="duration">DEC 2023 - Present</div>
+                <div class="company">Helpy_Moto</div>
+                <div class="imh"></div>
+                <div class="role">Internship / Quality Analyst Team</div>
+              </div>
+            </a>
           </div>
           <div class="weatherapp">
-            <a href="#"></a>
-            <div class="project-card">
-              <div class="duration">DEC 2023</div>
-              <div class="company">Help_Moto</div>
-              <div class="imh"></div>
-              <div class="role">QA Intern</div>
-            </div>
+            <a href="#">
+              <div class="project-card">
+                <div class="duration">DEC 2023</div>
+                <div class="company">Weathering</div>
+                <div class="imh"></div>
+                <div class="role">Ideation / UI/UX Design + Full-Stack Development</div>
+              </div>
+            </a>
           </div>
           <div class="landingpage">
-            <a href="#"></a>
-            <div class="project-card">
-              <div class="duration">DEC 2023</div>
-              <div class="company">Help_Moto</div>
-              <div class="imh"></div>
-              <div class="role">QA Intern</div>
-            </div>
+            <a href="#">
+              <div class="project-card">
+                <div class="duration">DEC 2023</div>
+                <div class="company">Animated Page</div>
+                <div class="img"></div>
+                <div class="role">Ideation / For Fun</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -102,6 +109,10 @@
               <h4>PHP</h4>
               <h4>GreenSock/GSAP</h4>
               <h4>LocomotiveJS</h4>
+              <h4>Manual testing</h4>
+              <h4>Functional Testing</h4>
+              <h4>Regression Testing</h4>
+              <h4>API Testing</h4>
             </div>
           </div>
           <div id="tools" class="skills">
@@ -132,9 +143,35 @@
           </div>
         </div>
       </div>
+      <div id="empty-page1">
+      </div>
+      <div id="empty-page2"></div>
     </div>
+    <footer class="footer">
+      <h1>Contact</h1>
+      <div id="footer-content">
+        <div id="socialmedia-handles">
+          <h2>Social Media</h2>
+          <div id="links">
+           <a href="#"><i class="ri-instagram-fill"></i></a>
+           <a href="#"><i class="ri-github-fill"></i></a>
+           <a href="https://www.linkedin.com/in/abhinav-jaiswal-a72634193/"><i class="ri-linkedin-box-fill"></i></a>
+          </div>
+        </div>
+        <div class="details">
+          <h4>© by Abhinav Jaiswal</h4>
+          <div id="mail-button">
+            <h2>Mail:</h2>
+            <h4 id="Mail-button">
+              <a href="mailto: abhinavajaiswal319@gmail.com">abhinavjaiswal319@gmail.com</a>
+            </h4>
+          </div>
+          <h4>Built from scratch :)<h4>
+        </div>
+      </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
       integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
@@ -147,6 +184,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>

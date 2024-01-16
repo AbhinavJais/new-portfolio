@@ -11,6 +11,18 @@
     --text-color: black;
 
 }
+::selection{
+    background-color: #0ADEB7;
+}
+#main{
+    /* background-color: black; */
+    position: relative;
+    z-index: 10;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
 #homepage{
     padding: 0 3vw;
     min-height: 100vh;
@@ -94,10 +106,11 @@
 /* project page styling */
 
 #projectpage{
+    padding: 0 3vw;
     min-height: 100vh;
     width: 100%;
     background-color: var(--bg-color);
-    padding: 0 2vw;
+    position: relative;
 }
 #projectpage h1{
     font-size: 6vw;
@@ -111,21 +124,24 @@
     justify-content: space-evenly;
     border-bottom: 1px solid black;
     padding-bottom: 22vh;
+    /* box-shadow: 7px 3px 20px black; */
 }
 .project-card{
     border: 1px solid black;
     position: relative;
     top: 4em;
-    left: 3em;
+    /* backdrop-filter: blur(10px); */
+    left: 2em;
     width: 20rem;
     height: 25rem;
     background-color: #fafafa;
-    
+    box-shadow: 3px 3px 3px black;
 }
 .project-card .duration{
     padding: 0.75rem;
     margin: 0;
     font-style: normal;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
@@ -139,25 +155,33 @@
 .project-card .role{
     padding: 0.75em;
     margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
 }
+/* #card-gradient-helpy{
+    border: 1px solid black;
+    width: 20rem;
+    height: 25rem;
+    background: linear-gradient(180deg, #C1FFDA 0%, #0ADEB7 100%);;
+} */
 
 /* skills sections styling */
 
 #skillspage{
+    padding: 0 3vw;
     min-height: 100vh;
     width: 100%;
     background-color: var(--bg-color);
-    border-bottom: 1px solid black;
-    padding-top: 8vh;
+    position: relative;
 }
 #skillspage h1{
     font-size: 6vw;
     text-align: center;
     font-weight: 300;
+    padding: 5vh;
 }
 .skills{
     display: flex;
@@ -174,9 +198,9 @@
     font-weight: 400;
     padding: 0.25em 0em 0em 0em;
 }
-.skills-content{
-    margin: 3em 0em;
-}
+/* .skills-content{
+    margin: 0em 0em;
+} */
 .skills-box{
     display: flex;
     flex-direction: row;
@@ -194,8 +218,248 @@
     background-color: #f0f0f0;
     width: fit-content;
     height: fit-content;
+    font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
-    font-size: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* empty pages */
+#empty-page1{
+    height: 20vh;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+#empty-page2{
+    height: 80vh;
+    width: 100%;
+}
+/* footer section design */
+
+.footer{
+    height: 80vh;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    z-index: 9;
+    bottom: 0;
+}
+.footer h1{
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 300;
+    padding: 5vh;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10em 6em;
+    flex-wrap: wrap
+}
+.details h4{
+    border: 0.1em solid #EFEAE3;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: normal;
     font-weight: 400;
     line-height: 150%
+}
+#mail-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mail-button h2{
+    font-weight: 300;
+    font-family: 'IBM Plex Mono', monospace;
+}
+#Mail-button a{
+    color: #fafafa;
+}
+#socialmedia-handles{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5em;
+    gap: 1em;
+}
+#socialmedia-handles h2{
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-family: 'IBM Plex Mono', monospace;
+}
+#socialmedia-handles a{
+    color: #EFEAE3;
+    font-size: 2em;
+    
+}
+
+/* --------------------- */
+
+/* responsiveness */
+
+@media only screen and (max-width:1320px){
+    .project-card{
+        left:1em;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    #projectpage{
+        
+    }
+    .project-card{
+        height: 22rem;
+        left: 1em;
+        width: 18rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+@media only screen and (max-width:1100px){
+    .details{
+        margin: 9em 3em;
+    }
+    .details h4{
+        font-size: 13px;
+    }
+    #mail-button h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .project-card{
+        height: 21rem;
+        width: 17rem;
+    }
+    .project-card .company{
+        font-size: 32px;
+    }
+    .project-card .duration{
+        font-size: 16px;   
+    }
+    .project-card .role{
+        font-size: 15px;
+    }
+    .skills-box h4{
+        font-size: 13px;
+    }
+    
+}
+
+@media only screen and (max-width: 920px){
+    .project-card{
+        height: 20rem;
+        width: 15rem;
+    }
+    .project-card .company{
+        font-size: 30px;
+    }
+    .project-card .duration{
+        font-size: 15px;
+    }
+    .project-card .role{
+        font-size: 12px;
+    }
+    .skills-box h4{
+        font-size: 12px;
+    }
+    .details{
+        margin: 11em 3em;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .details{
+        margin: 13em 3em;
+    }
+    .details h4{
+        font-size: 10px;
+    }
+    #mail-button h2{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .details{
+        margin: 13em 2em;
+    }
+    .details h4{
+        font-size: 10px;
+    }
+    #mail-button h2{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .navbar .leftsidenav{
+        display: none;
+    }
+    .details{
+        margin: 13.5em 1em;
+    }
+}
+@media only screen and (max-width: 450px){
+    .navbar .leftsidenav{
+        display: none;
+    }
+    .right h1 img{
+        height: 30vh;
+    }
+    .left h3{
+        font-size: 4vw;
+    }
+
+    .project-card{
+        height: 16rem;
+    }
+    .project-content{
+        gap: 1rem;
+    }
+    #skillspage{
+        padding: 0;
+    }
+    #skillspage h1{
+        font-size: 6vw;
+    }
+    .skills-box{
+        margin: 1.4em 0em;
+        margin-left: 2.4rem;
+    }
+    .skills-box h4{
+        font-size: 8px;
+        font-weight: 450;
+    }
+    .skills h2{
+        padding: 0em 0em 0em 4em;
+    }
+    #tools h2{
+        padding: 0em 0em 0em 4.6em;
+    }
+    .details{
+        margin: 16em 0em;
+    }
+    .details h4{
+        font-size: 9px;
+    }
+    #mail-button h2{
+        font-size: 10px;
+    }
 }
