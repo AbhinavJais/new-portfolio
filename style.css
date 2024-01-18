@@ -136,6 +136,11 @@ a{
     height: 25rem;
     background-color: #fafafa;
     box-shadow: 3px 3px 3px black;
+    transition: all .30s ease-in;
+}
+.project-card:hover{
+    scale: 1.03;
+    transform: translateY(-10px);
 }
 .project-card .duration{
     padding: 0.75rem;

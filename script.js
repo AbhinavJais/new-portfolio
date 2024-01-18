@@ -1,3 +1,4 @@
+
 var tl = gsap.timeline();
 
 tl.from(".navbar h4, .leftsidenav",{
@@ -42,8 +43,24 @@ gsap.from("#skillspage h1, .skills-content",{
     }
 })
 
+// ScrollTrigger.addEventListener("refresh",() => 
+// locoScroll.update());
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// ScrollTrigger.refresh();
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
+
+// locoScroll.on("scroll", ScrollTrigger.update);
+
+// ScrollTrigger.scrollerProxy("#main",{
+//         scrollTop(value){
+//         return arguments.length?locoScroll.scrollTo(value,0,0):locoScroll.scroll.instance.scroll.y;
+//     },
+//     getBoundingClientRect(){
+//             return{top:0, left:0, width:widow.innerWidth, height:window.innerHeight};
+//     },
+//     pinType: document.querySelector("#main").style.transform?"transform" : "fixed"
+// })
