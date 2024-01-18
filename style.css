@@ -55,27 +55,31 @@ a{
     font-size: 18px;
     position: relative;
     /* transition: all ease-in 0.5s; */
-    z-index: 100;
+    z-index: 2;
     overflow: hidden;
 }
 .leftsidenav a::after{
     content: "";
     position: absolute;
     background-color: black;
+    color: white;
     height: 100%;
     width: 100%;
     left: 0;
     bottom: -100%;
     border-radius: 50%;
     transition: all ease-in 0.4s;
+    z-index: 0;
 }
 .leftsidenav a:hover::after{
     bottom: 0;
     border-radius: 0;
+    z-index: -2;
 
 }
 .leftsidenav a:hover {
     color: white;
+    z-index: 2;
 }
 #center{
     height: 80vh;
@@ -138,6 +142,9 @@ a{
     box-shadow: 3px 3px 3px black;
     transition: all .30s ease-in;
 }
+.helpy a{
+    
+}
 .project-card:hover{
     scale: 1.03;
     transform: translateY(-10px);
@@ -166,7 +173,15 @@ a{
     font-weight: 400;
     line-height: 150%;
 }
-/* #card-gradient-helpy{
+.project-card .images{
+    width: 18rem;
+    height: auto;
+    margin-left: 1.5em;
+    margin-top: 2em;
+    object-fit: cover;
+}
+/* #card-gradient-weather{
+    position: absolute;
     border: 1px solid black;
     width: 20rem;
     height: 25rem;
@@ -435,6 +450,12 @@ a{
     .project-card{
         height: 16rem;
     }
+    .project-card .images{
+        width: 10rem;
+        height: 4rem;
+        object-fit: contain;
+        margin-top: 1rem;
+    }
     .project-content{
         gap: 1rem;
     }
@@ -468,3 +489,30 @@ a{
         font-size: 10px;
     }
 }
+
+/* [data-scroll] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: translateY(6rem) scale(0.93);
+    -moz-transform: translateY(6rem) scale(0.93);
+    -ms-transform: translateY(6rem) scale(0.93);
+    -o-transform: translateY(6rem) scale(0.93);
+    -webkit-transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -ms-transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+  [data-scroll=in] {
+     opacity: 1;
+     transform: translateY(0) scale(1);
+   }
+    [data-scroll=in]:after {
+       opacity: 1;
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+       -ms-transform: translateY(0);
+      -o-transform: translateY(0);  
+    } */
