@@ -1,3 +1,8 @@
+const header = document.querySelector(".navbar");
+
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",window.scrollY > 0);
+})
 
 var tl = gsap.timeline();
 
@@ -42,6 +47,24 @@ gsap.from("#skillspage h1, .skills-content",{
         scrub:2,
     }
 })
+
+// text suffling code -->
+
+const text = baffle('.left h3');
+
+text.set({
+    character:'',
+    speed: 120,
+})
+text.start();
+text.reveal(4000);
+
+
+
+
+
+
+
 
 // ScrollTrigger.addEventListener("refresh",() => 
 // locoScroll.update());

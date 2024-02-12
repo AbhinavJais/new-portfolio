@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
-    <!-- box icons link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <!-- favicons link -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="icons/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icons/favicon-16x16.png"
-    />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div id="main">
-      <div id="homepage">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <!-- box icons link -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- favicons link -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="homepage">
+      <header>
         <div class="navbar">
           <h4>My Portfolio</h4>
 
@@ -43,148 +29,154 @@
             <a href="#projectpage">projects</a>
             <a href="/new/Abhinav_Jaiswal_Resume.pdf" target="_blank">Resume</a>
           </div>
+          <button id="hamburger-nav">Menu</button>
         </div>
-        <div id="center">
-          <div class="left">
-            <h3>Hi my name is abhinav jaiswal</h3>
-            <br />
-            <h3>and i am developer, Researcher, Technologist, Open Source Contributor, Designer.</h3>
-          </div>
-          <div class="right">
-            <h1><img src="images/dev.svg" alt="" /></h1>
-          </div>
+      </header>
+
+      <div id="center">
+        <div class="left">
+          <h3>Hi my name is abhinav jaiswal</h3>
+          <br />
+          <h3>and i am developer, Researcher, Technologist, Open Source Contributor, Designer.</h3>
         </div>
-      </div>
-      <div id="projectpage">
-        <h1>Projects</h1>
-        <div class="project-content">
-          <!-- <div class="helpy" id="card-gradient-helpy">
-            <a href="#">
-              <div class="project-card">
-                <div class="duration">DEC 2023 - Present</div>
-                <div class="company">Helpy_Moto</div>
-                <img class="images" src=" " alt="">
-                <div class="role">Internship / Quality Analyst Team</div>
-              </div>
-            </a>
-          </div> -->
-          <div class="weatherapp" id="card-gradient-weather">
-            <a href="https://weathering-w.netlify.app/" target="_blank">
-              <div class="project-card">
-                <div class="duration">DEC 2023</div>
-                <div class="company">Weathering</div>
-                <img class="images" src="images/weather2.svg" target="_blank" alt="weather">
-                <div class="role">Ideation / UI/UX Design + Full-Stack Development</div>
-              </div>
-            </a>
-          </div>
-          <div class="landingpage">
-            <a href="#">
-              <div class="project-card">
-                <div class="duration">DEC 2023</div>
-                <div class="company">Animated Page</div>
-                <div class="img"></div>
-                <div class="role">Ideation / For Fun</div>
-              </div>
-            </a>
-          </div>
+        <div class="right">
+          <img src="images/dev.svg" alt="" />
         </div>
       </div>
-      <div id="skillspage">
-        <h1>Skills</h1>
-        <div class="skills-content">
-          <div id="tech" class="skills">
-            <h2>Technical</h2>
-            <div class="skills-box">
-              <h4>C++</h4>
-              <h4>Data Structures and Algorithms</h4>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>JavaScript</h4>
-              <h4>React.JS</h4>
-              <h4>Node.JS</h4>
-              <h4>Python</h4>
-              <h4>SQL</h4>
-              <h4>Tailwind CSS</h4>
-              <h4>PHP</h4>
-              <h4>GreenSock/GSAP</h4>
-              <h4>LocomotiveJS</h4>
-              <h4>Manual testing</h4>
-              <h4>Functional Testing</h4>
-              <h4>Regression Testing</h4>
-              <h4>API Testing</h4>
+    </div>
+    <div id="projectpage">
+      <h1>Projects</h1>
+      <div class="project-content">
+        <div class="helpy">
+          <a href="#">
+            <div id="card-gradient-helpy"></div>
+            <div class="project-card">
+              <div class="duration">DEC 2023 - Present</div>
+              <div class="company">Helpy_Moto</div>
+              <img class="images" src=" " alt="">
+              <div class="role">Internship / Quality Analyst Team</div>
             </div>
-          </div>
-          <div id="tools" class="skills">
-            <h2>Tools</h2>
-            <div class="skills-box">
-              <h4>Postman</h4>
-              <h4>Jira</h4>
-              <h4>Azure Devops</h4>
-              <h4>VS Code</h4>
-              <h4>Github</h4>
-              <h4>CMD</h4>
-              <h4>Microsoft Office</h4>
-              <h4>WordPress</h4>
-              <h4>Canva</h4>
+          </a>
+        </div>
+        <div class="weatherapp">
+          <a href="https://weathering-w.netlify.app/" target="_blank">
+            <div id="card-gradient-weather"></div>
+            <div class="project-card">
+              <div class="duration">DEC 2023</div>
+              <div class="company">Weathering</div>
+              <img class="images" src="images/weather2.svg" target="_blank" alt="weather">
+              <div class="role">Ideation / UI/UX Design + Full-Stack Development</div>
             </div>
-          </div>
-          <div id="methods" class="skills">
-            <h2>Methods</h2>
-            <div class="skills-box">
-              <h4>SDLC</h4>
-              <h4>STLC</h4>
-              <h4>DataBase</h4>
-              <h4>DBMS</h4>
-              <h4>Computer Networks</h4>
-              <h4>ER Models</h4>
-              <h4>UML Models</h4>
+          </a>
+        </div>
+        <div class="landingpage">
+          <a href="#">
+            <div id="card-gradient-anime"></div>
+            <div class="project-card">
+              <div class="duration">DEC 2023</div>
+              <div class="company">Animated Page</div>
+              <div class="img"></div>
+              <div class="role">Ideation / For Fun</div>
             </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="skillspage">
+      <h1>Skills</h1>
+      <div class="skills-content">
+        <div id="tech" class="skills">
+          <h2>Technical</h2>
+          <div class="skills-box">
+            <h4>C++</h4>
+            <h4>Data Structures and Algorithms</h4>
+            <h4>HTML</h4>
+            <h4>CSS</h4>
+            <h4>JavaScript</h4>
+            <h4>React.JS</h4>
+            <h4>Node.JS</h4>
+            <h4>Python</h4>
+            <h4>SQL</h4>
+            <h4>Tailwind CSS</h4>
+            <h4>PHP</h4>
+            <h4>GreenSock/GSAP</h4>
+            <h4>LocomotiveJS</h4>
+            <h4>Manual testing</h4>
+            <h4>Functional Testing</h4>
+            <h4>Regression Testing</h4>
+            <h4>API Testing</h4>
+          </div>
+        </div>
+        <div id="tools" class="skills">
+          <h2>Tools</h2>
+          <div class="skills-box">
+            <h4>Postman</h4>
+            <h4>Jira</h4>
+            <h4>Azure Devops</h4>
+            <h4>VS Code</h4>
+            <h4>Github</h4>
+            <h4>CMD</h4>
+            <h4>Microsoft Office</h4>
+            <h4>WordPress</h4>
+            <h4>Canva</h4>
+          </div>
+        </div>
+        <div id="methods" class="skills">
+          <h2>Methods</h2>
+          <div class="skills-box">
+            <h4>SDLC</h4>
+            <h4>STLC</h4>
+            <h4>DataBase</h4>
+            <h4>DBMS</h4>
+            <h4>Computer Networks</h4>
+            <h4>ER Models</h4>
+            <h4>UML Models</h4>
           </div>
         </div>
       </div>
-      <div id="empty-page1">
-      </div>
-      <div id="empty-page2"></div>
+    </div>
+    <div id="empty-page1">
     </div>
     <footer class="footer">
-      <h1>Contact</h1>
-      <div id="footer-content">
-        <div id="socialmedia-handles">
-          <h2>Social Media</h2>
-          <div id="links">
-           <a href="#"><i class="ri-instagram-fill"></i></a>
-           <a href="#"><i class="ri-github-fill"></i></a>
-           <a href="https://www.linkedin.com/in/abhinav-jaiswal-a72634193/"><i class="ri-linkedin-box-fill"></i></a>
+      <div id="empty-page">
+      </div>
+      <div id="footer-component">
+        <h1>Contact</h1>
+        <div id="footer-content">
+          <div id="socialmedia-handles">
+            <h2>Social Media</h2>
+            <div id="links">
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+              <a href="#"><i class="ri-github-fill"></i></a>
+              <a href="https://www.linkedin.com/in/abhinav-jaiswal-a72634193/"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
           </div>
-        </div>
-        <div class="details">
-          <h4>© by Abhinav Jaiswal</h4>
-          <div id="mail-button">
-            <h2>Mail:</h2>
-            <h4 id="Mail-button">
-              <a href="mailto:abhinavajaiswal319@gmail.com">abhinavjaiswal319@gmail.com</a>
-            </h4>
+          <div class="details">
+            <h4>© by Abhinav Jaiswal</h4>
+            <div id="mail-button">
+              <h2>Mail:</h2>
+              <h4 id="Mail-button">
+                <a href="mailto:abhinavajaiswal319@gmail.com">abhinavjaiswal319@gmail.com</a>
+              </h4>
+            </div>
+            <h4>Built from scratch :)</h4>
           </div>
-          <h4>Built from scratch :)<h4>
         </div>
       </div>
     </footer>
+  </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
     integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    ></script>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
     integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    ></script>
-    <script src="script.js"></script>
-  </body>
-  </html>
-  
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
