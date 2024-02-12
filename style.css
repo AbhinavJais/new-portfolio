@@ -563,10 +563,25 @@ a{
         width: 18rem;
     }
     #card-gradient-weather{
-        left: 25.2rem;    
+        left: 22rem;  
+        height: 22rem;
+        width: 18rem;  
     }
     #card-gradient-anime{
-        right: 1.9rem;  
+        right: 0.8rem; 
+        height: 22rem;
+        width: 18rem; 
+    }
+}
+@media only screen and (max-width: 1000px){
+    #card-gradient-helpy{
+        left: 2.4rem;
+    }
+    #card-gradient-weather{
+        left: 21.3rem;    
+    }
+    #card-gradient-anime{
+        right: 0.5rem;  
     }
 }
 
@@ -590,6 +605,22 @@ a{
     .details{
         margin: 11em 3em;
     }
+    #card-gradient-helpy{
+        left: 2.8rem;
+        height: 21rem;
+        width: 16rem;
+    }
+    #card-gradient-weather{
+        left: 20rem;  
+        height: 21rem;
+        width: 16rem;  
+    }
+    #card-gradient-anime{
+        right: 0.8rem; 
+        height: 21rem;
+        width: 16rem; 
+    }
+
 }
 
 @media only screen and (max-width: 780px){
@@ -605,6 +636,21 @@ a{
     .leftsidenav a{
         font-size: 15px;
         font-weight: 500;
+    }
+}
+@media only screen and (max-width:765px){
+    .project-content{
+        gap: 2rem;
+    }
+    #card-gradient-helpy{
+        left: 3.2rem;
+    }
+    #card-gradient-weather{
+        left: 22.8rem;  
+    }
+    #card-gradient-anime{
+        top: 25.5rem;
+        left: 13rem;
     }
 }
 
@@ -648,6 +694,19 @@ a{
     }
     .details{
         margin: 13.5em 1em;
+    }
+}
+@media only screen and (max-width:544px){
+    #card-gradient-helpy{
+        left: 8.9rem;
+    }
+    #card-gradient-weather{
+        top: 25.5rem;
+        left: 8.9rem;  
+    }
+    #card-gradient-anime{
+        top: 47.5rem;
+        left: 8.9rem;
     }
 }
 @media only screen and (max-width: 450px){
