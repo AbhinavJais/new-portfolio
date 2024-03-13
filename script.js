@@ -1,4 +1,20 @@
-const header = document.querySelector(".navbar");
+const header = document.querySelector(".navbar")
+const menunav = document.querySelector(".navbar button")
+const fullscr = document.querySelector(".full-scr")
+var flag = 0
+
+menunav.addEventListener("click", () => {
+    if(flag == 0){
+        console.log("clicked")
+        fullscr.style.top = 0
+        flag = 1
+    }
+    else{
+        console.log("clicked again")
+        fullscr.style.top = "-100%"
+        flag = 0
+    }
+})
 
 window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY > 0);

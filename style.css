@@ -14,6 +14,9 @@
 ::selection{
     background-color: #0ADEB7;
 }
+ul{
+    list-style-type: none;
+}
 #main{
     /* background-color: black; */
     position: relative;
@@ -23,6 +26,27 @@ a{
     color: black;
     text-decoration: none;
 }
+.full-scr{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: fixed;
+    z-index: 11;
+    top: -100%;
+    transition: all ease 0.7s;
+}
+.ham{
+    display: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 50px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--bg-color);
+}
 #homepage{
     padding: 0 3vw;
     min-height: 100vh;
@@ -31,16 +55,41 @@ a{
     position: relative;
 
 }
-#hamburger-nav{
+.mobile-menu{
     display: none;
 }
+.menu-content{
+    display: none;
+    text-transform: capitalize;
+    margin: 0;
+    animation: menu-content 1s ease-in-out;
+}
+@keyframes menu-content{
+    0% {
+        height: 0rem;
+    }
+    100% {
+        height: 100vh;
+    }
+}
+.menu-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
 .navbar{
+    z-index: 20;
     padding: 2vw 0vw;
     width: 100%;
     /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+   position: relative;
+   z-index: 12;
 }
 .leftsidenav{
     display: flex;
@@ -145,9 +194,6 @@ a{
     backdrop-filter: blur(10px);
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.822);
     transition: all .30s ease-in;
-}
-.helpy a{
-    
 }
 .project-card:hover{
     scale: 1.05;
@@ -393,7 +439,6 @@ a{
         right: 2.8rem;  
     }
 }
-
 @media only screen and (max-width: 1300px){
     #card-gradient-helpy{
         width: 21rem;
@@ -454,7 +499,6 @@ a{
         right: 2rem;  
     }
 }
-
 @media only screen and (max-width: 1200px){
     .project-card{
         height: 22rem;
@@ -539,7 +583,6 @@ a{
         right: 1.1rem;  
     }
 }
-
 @media only screen and (max-width: 1020px) {
     .project-card{
         height: 21rem;
@@ -583,8 +626,7 @@ a{
     #card-gradient-anime{
         right: 0.5rem;  
     }
-}
-
+}   
 @media only screen and (max-width: 920px){
     .project-card{
         height: 20rem;
@@ -622,7 +664,6 @@ a{
     }
 
 }
-
 @media only screen and (max-width: 780px){
     .details{
         margin: 13em 3em;
@@ -637,32 +678,85 @@ a{
         font-size: 15px;
         font-weight: 500;
     }
+    .right img{
+        height: 25vh;
+    }
+    .project-card .duration{
+        font-size: 11px;
+    }
+    .project-card .company{
+        font-size: 28px;
+    }
+    .project-card .images{
+        height: 13vh;
+        width: 27vw;
+        margin-left: 1em;
+        margin-top: .8em;
+    }
 }
 @media only screen and (max-width:765px){
     .project-content{
-        gap: 2rem;
+        gap: 3rem;
     }
     #card-gradient-helpy{
-        left: 3.2rem;
+        left: 4.5rem;
+        width: 15.9rem; 
     }
     #card-gradient-weather{
-        left: 22.8rem;  
+        left: 26.5rem;
+        width: 15.9rem;  
     }
     #card-gradient-anime{
-        top: 25.5rem;
-        left: 13rem;
+        top: 26.5rem;
+        left: 15.5rem;
+        width: 15.9rem; 
+    }
+    /* #anime{
+        position: relative;
+        top: 10rem;
+    } */
+    .project-card .duration{
+        font-size: 11px;
+    }
+    .project-card .company{
+        font-size: 28px;
+    }
+    .project-card .images{
+        height: 13vh;
+        width: 27vw;
+        margin-left: 1em;
+        margin-top: .8em;
     }
 }
-
 @media only screen and (max-width: 680px){
+    .ham{
+        display: block;
+    }
+    #homepage{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        padding: 2vw 3vw;
+        background-color: var(--bg-color);
+    }
     .details{
         margin: 13em 2em;
     }
     .details h4{
         font-size: 10px;
     }
-    #mail-button h2{
-        font-size: 15px;
+    .menu-content{
+        display: block;
+        background-color: var(--bg-color);
+        height: 50%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+    .menu-content ul li a{
+        top: 7rem;
+        position: relative;
+        font-size: 4vw;
     }
     .right img{
         height: 40vh;
@@ -670,22 +764,6 @@ a{
     }
     .leftsidenav a{
         display: none;
-    }
-    #hamburger-nav{
-        display: block;
-        padding: 10px 20px;
-        border: 1px solid rgb(161, 161, 161);
-        border-radius: 50px;
-        text-transform: capitalize;
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.664);
-        font-weight: 500;
-        font-size: 13px;
-        position: relative;
-        z-index: 2;
-        overflow: hidden;
-        background-color: transparent;
-
     }
 }
 @media only screen and (max-width: 550px){
