@@ -1,8 +1,19 @@
-const header = document.querySelector(".navbar")
+var header = document.querySelector(".navbar")
 const menunav = document.querySelector(".navbar button")
 const fullscr = document.querySelector(".full-scr")
+const clos = document.querySelector(".close")
+const clos1 = document.querySelector(".close1")
+const clos2 = document.querySelector(".close2")
+const clos3 = document.querySelector(".close3")
 var flag = 0
 
+
+//for page reloding
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+//for the menu toggle  
 menunav.addEventListener("click", () => {
     if(flag == 0){
         console.log("clicked")
@@ -16,10 +27,37 @@ menunav.addEventListener("click", () => {
     }
 })
 
+//for the menu options closing
+clos.addEventListener( "click" , ()=>{
+    console.log("clicked")
+    fullscr.style.top = "-100%"
+    flag= 0
+})
+
+clos1.addEventListener( "click" , ()=>{
+    console.log("clicked")
+    fullscr.style.top = "-100%"
+    flag= 0
+})
+
+clos2.addEventListener( "click" , ()=>{
+    console.log("clicked")
+    fullscr.style.top = "-100%"
+    flag= 0
+})
+
+clos3.addEventListener( "click" , ()=>{
+    console.log("clicked")
+    fullscr.style.top = "-100%"
+    flag= 0
+})
+
+
 window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY > 0);
 })
 
+//gsap code
 var tl = gsap.timeline();
 
 tl.from(".navbar h4, .leftsidenav",{
