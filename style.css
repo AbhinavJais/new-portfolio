@@ -732,6 +732,7 @@ a{
     .ham{
         display: block;
     }
+    
     #homepage{
         margin: 0;
         padding: 0;
@@ -788,6 +789,10 @@ a{
     }
 }
 @media only screen and (max-width: 450px){
+    .full-scr{
+        top: -100%;
+        height: 89vh;
+    }
     .navbar .leftsidenav{
         display: none;
     }
